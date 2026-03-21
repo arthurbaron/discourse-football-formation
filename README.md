@@ -15,7 +15,11 @@ Saka - Jesus - Martinelli
 [/formation]
 ```
 
+Players are listed **right to left** per line, matching how you see the pitch (e.g. RB on the right, LB on the left).
+
 The plugin will automatically render a football pitch with players positioned correctly.
+
+You can also use the **toolbar button** (👥) in the post composer to open a dialog where you can select a formation, fill in player names per row, and preview the result before inserting.
 
 ### Supported formations
 
@@ -40,7 +44,7 @@ ssh user@yourserver.com
 
 ```bash
 cd /var/discourse
-git clone https://github.com/yourforum/discourse-football-formation.git plugins/discourse-football-formation
+git clone https://github.com/arthurbaron/discourse-football-formation.git plugins/discourse-football-formation
 ```
 
 > If you haven't published the plugin to GitHub yet, upload the folder manually via SFTP to:
@@ -79,7 +83,7 @@ discourse-football-formation/
 │   ├── stylesheets/
 │   │   └── formation.css              ← pitch styles
 │   └── javascripts/discourse/
-│       └── initializers/
-│           └── formation.js           ← rendering logic
+│       └── api-initializers/
+│           └── formation.js           ← rendering logic + toolbar button
 └── README.md
 ```
